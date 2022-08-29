@@ -1,7 +1,10 @@
 import { ApolloServer, gql } from "apollo-server";
 
 const typeDef = `
-    
+    type Query{
+        text: String
+        
+    }
 `
 
 const server = new ApolloServer({});
