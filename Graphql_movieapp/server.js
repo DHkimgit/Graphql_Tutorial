@@ -97,14 +97,14 @@ const resolvers = {
             return user
         }
     },
-    User: {
+        User: {
         nameandrank({name, rank}){
             return `${rank} ${name}`
         }
     }
 
 }
-
+//mongod --dbpath /var/lib/mongodb/
 
 const server = new ApolloServer({typeDefs, resolvers});
 

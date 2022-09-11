@@ -1,0 +1,11 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'local';
+const collection = 'people';
+
+use(database);
+
+db.people.updateOne({"name": "Andy"}, 
+{"$set" : {"friendIds": ["631d69fc7001667988b342cb"]}}, { upsert: true })
+
